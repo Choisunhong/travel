@@ -1,0 +1,255 @@
+/*메인 뒷배경 */
+.mainbackground{
+  width: 100vw;
+   height: 100vh; 
+   background: #D0E3FF;
+ }
+ .airplane-image {
+  position: absolute;
+  top: 20px;
+  left: 300px;
+  width: 250px; /* 이미지의 너비 */
+  height: auto; /* 이미지의 높이를 너비에 맞게 자동 조정 */
+}
+
+.header-label {
+  font-size: 80px;
+  font-weight: bold;
+  color: #334EAC;
+ 
+  text-align: center; /* 텍스트를 가운데 정렬 */
+  width: 60%;
+  margin: auto;
+    display: block;
+}
+
+ .mainpage-wrapper {
+  width: 1200px;
+  height: 630px;
+  left: 360px;
+  border-radius: 10px;
+  justify-content: flex-end;
+  position: relative;
+  background: #EDF1F6;
+}
+.mainarticle {
+  width: 1175px;
+  height: 630px;
+  left: 5px;
+  padding: 5px; 
+  border-radius: 10px;
+  border: 3px #334EAC solid;
+  justify-content: flex-end;
+  position: relative;
+  background: #EDF1F6;
+}
+.header {
+  display: flex;
+  border-radius: 10px; 
+  justify-content: space-between; /* Spreads the buttons across the header */
+  padding: 5px; /* Adds some spacing inside the header */
+  background: #EDF1F6; /* Gives a light background color to the header */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Adds a subtle shadow for depth */
+}
+ .headerbutton {
+  padding: 30px 269px; /* Adds space inside the buttons */
+  background: #EDF1F6; /* Button background color */
+  border-radius: 10px; /* Rounds the corners of the buttons */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Shadow for the buttons for depth */
+  cursor: pointer; /* Changes the cursor to indicate they're clickable */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+  border: 3px #334EAC solid;
+  color: #334EAC;
+}
+.headerbutton:hover {
+  background-color: #BAD6EB; /* Light grey background on hover */
+}
+.activeButton {
+  background-color: #BAD6EB; /* 활성화된 버튼의 배경색 */
+}
+.write-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputs-row1 {
+  width: 93%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.inputs-row2 {
+  width: 93%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+
+}
+
+.inputs-row1 input {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 20px;
+  border: 5px solid #7096D1;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+  margin: 0 10px;
+  outline: none;
+  -webkit-appearance: none; 
+  appearance: none;
+}
+.inputs-row2 input {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 20px;
+  border: 5px solid #7096D1;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+  margin: 0 10px;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none; 
+}
+
+.input-large {
+  width: 90%;
+  height: 215px;
+  border-radius: 20px;
+  border: 5px solid #7096D1;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+  margin: 0 20px;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none; 
+}
+
+
+.read-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 한 줄에 4개의 카드를 표시 */
+  grid-gap: 20px; /* 카드 간의 간격 */
+  padding: 20px; /* 컨테이너의 내부 여백 */
+  overflow-y: auto; /* 세로 스크롤바 설정 (필요한 경우) */
+  max-height: 580px; /* 컨테이너의 최대 높이 설정 */
+}
+
+.read-container::-webkit-scrollbar {
+  width: 12px; /* 스크롤바 너비 */
+  background-color: #9A9693;
+  border-radius: 10px; 
+}
+
+.read-container::-webkit-scrollbar-thumb {
+  background-color: #7096D1;
+  border-radius: 10px;  
+}
+
+.read-container::-webkit-scrollbar-button {
+  display: none; /* 스크롤바 버튼(삼각형) 제거 */
+}
+
+.card {
+  height: 220px;
+  background-color: #BAD6EB; /* 카드 배경색 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+  border-radius: 10px; /* 테두리 둥근 모서리 */
+  padding: 20px; /* 카드 내부 패딩 */
+  cursor: pointer; /* 마우스 오버시 포인터 변경 */
+  transition: transform 0.2s; /* 호버 효과를 위한 전환 */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* 호버시 카드를 약간 위로 이동 */
+}
+
+.card-image {
+  width: 50%; /* 카드 너비에 맞게 이미지 크기 조정 */
+  object-fit: cover; /* 이미지 비율을 유지하면서 영역 채움 */
+}
+
+.card-content {
+  width: 100%; /* 카드 너비에 맞게 내용 너비 조정 */
+  padding: 15px; /* 내용 주위에 패딩 추가 */
+  text-align: center; /* 텍스트 중앙 정렬 */
+}
+
+.card-title {
+  text-align: center;
+  color: #334EAC; 
+  font-size: 30px; /* 제목 글꼴 크기 */
+  font-weight: bold; /* 글꼴 두께 */
+  margin: 10px 0; /* 위아래 마진 추가 */
+}
+
+.card-description {
+  margin-right: 10px;
+  font-size: 15px; /* 설명 글꼴 크기 */
+}
+.card-descriptionimg {
+  width: 20%; /* 카드 너비에 맞게 이미지 크기 조정 */
+  object-fit: cover;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); /* 반투명 검은색 배경 */
+}
+
+/* 모달 내용 스타일 */
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 50%; /* 필요에 따라 조정 */
+  max-width: 500px; /* 최대 너비 제한 */
+}
+
+/* 모달 닫기 버튼 스타일 */
+.close {
+  float: left;
+  font-size: 3rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+
+.button { 
+  padding: 8px 40px;
+  margin-top: 10px;
+ border-radius: 15px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-size: 30px;
+ font-family: 'Roboto', sans-serif;
+ font-weight: 800;
+ color: #334EAC;
+ background: #BAD6EB;
+ border: 3px #334EAC solid;
+}
+
+.budget-container {
+  display: flex; /* Flexbox 레이아웃 적용 */
+  align-items: center; /* 수직 방향 중앙 정렬 */
+}
