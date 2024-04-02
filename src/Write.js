@@ -33,7 +33,7 @@ function Write() {
     };
 
     // Axios를 사용한 API 호출
-    axios.post('http://localhost:8000/travel/api/', data)
+    axios.post(`${process.env.REACT_APP_API_BASE_URL}/travel/api/`, data)
       .then(response => {
         // 성공 시 처리 로직
         console.log('저장 성공:', response.data);

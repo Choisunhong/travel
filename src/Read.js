@@ -14,7 +14,7 @@ function Read() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:8000/travel/api/');
+        const response = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/travel/api/`);
         setData(response.data); // 예시 응답 데이터 구조를 가정합니다.
       } catch (error) {
         console.error('데이터를 불러오는 데 실패했습니다.', error);
